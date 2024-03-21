@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(#31220b, #382e1b);
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f3e7d4;
+}
+
+
+#checkout {
+  animation: fade-slide-in-from-right 0.3s ease-in-out;
+  
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    input {
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+
+@keyframes fade-slide-in-from-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-slide-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

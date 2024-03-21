@@ -1,0 +1,56 @@
+#modal {
+    animation: fade-slide-in-from-top 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    border: none;
+    width: 30%;
+    background: #d3b17b;
+    
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+
+    h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #4f3807;
+    }
+
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-end;
+    
+        button {
+            border-radius: 5px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: #201e1a;
+            
+            &:hover {
+                color: #453719;
+            }
+            
+            &:last-of-type {
+                border-radius: 5px;
+                border: none;
+                padding: 0.5rem 1rem;
+                background: #271e07;
+                cursor: pointer;
+                font-size: 1rem;
+                color: #f9efda;
+                
+                &:hover {
+                    background: #382e1b;
+                }
+            }
+            
+        }
+    }
+}
